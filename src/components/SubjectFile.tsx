@@ -29,7 +29,7 @@ export const SubjectFile: React.FC = () => {
                 DOSSIER RECORD ID
               </span>
               <span className="font-oswald text-base sm:text-lg font-bold text-[#E8E5D8] tracking-wider uppercase">
-                CASE #VP-023-CHEM-ENG
+                CASE #VP-023-IT-ENG
               </span>
             </div>
           </div>

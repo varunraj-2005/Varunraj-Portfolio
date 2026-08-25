@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'motion/react';
+import { CustomCursor } from './components/CustomCursor';
 import { FilmGrain } from './components/FilmGrain';
 import { ParticleBackground } from './components/ParticleBackground';
 import { PeriodicNav } from './components/PeriodicNav';
@@ -92,6 +93,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#080907] text-[#E8E5D8] relative selection:bg-[#D6B94C] selection:text-[#080907]">
+      {/* Custom lab crosshair cursor + idle smoke */}
+      <CustomCursor />
+
       {/* Visual textures: film grain, scanlines & ambient dust particles */}
       <FilmGrain />
       <ParticleBackground />

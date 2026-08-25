@@ -18,6 +18,25 @@
     color: var(--text-primary);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* Restore default cursor on touch devices — no custom cursor needed */
+  @media (hover: none) and (pointer: coarse) {
+    body {
+      cursor: auto;
+    }
+  }
+
+  /* All interactive elements inherit none so the crosshair stays consistent */
+  a, button, [role="button"], label, select, input, textarea {
+    cursor: none;
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    a, button, [role="button"], label, select, input, textarea {
+      cursor: auto;
+    }
   }
 }
 

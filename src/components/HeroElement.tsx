@@ -61,18 +61,23 @@ export const HeroElement: React.FC<HeroElementProps> = ({
               </div>
             </div>
 
-            {/* Center Symbol with Atomic Orbit Visual */}
+            {/* Center: Photo with Atomic Orbit Ring */}
             <div className="relative text-center my-auto flex items-center justify-center">
               {/* Atomic Ring */}
               <div
-                className={`absolute w-36 h-36 rounded-full border border-dashed border-[#D6B94C]/20 transition-all duration-700 ${
+                className={`absolute w-44 h-44 rounded-full border border-dashed border-[#D6B94C]/20 transition-all duration-700 ${
                   isHovered ? 'scale-110 rotate-45 border-[#D6B94C]/50' : 'animate-spin-slow'
                 }`}
               />
-              
-              <span className="font-bebas text-8xl sm:text-9xl md:text-[10rem] leading-none text-[#E8E5D8] group-hover:text-[#D6B94C] transition-colors tracking-tight">
-                V
-              </span>
+
+              {/* Profile Photo */}
+              <div className="relative w-36 h-36 rounded-full overflow-hidden border-2 border-[#D6B94C]/60 group-hover:border-[#D6B94C] transition-colors shadow-[0_0_20px_rgba(214,185,76,0.15)]">
+                <img
+                  src="/varunraj-photo.png"
+                  alt="Varunraj P."
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
 
             {/* Bottom: Name, Classification & Chemical Purity */}

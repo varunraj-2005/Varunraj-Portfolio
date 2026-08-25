@@ -8,6 +8,7 @@ import { AnimatePresence } from 'motion/react';
 import { FilmGrain } from './components/FilmGrain';
 import { ParticleBackground } from './components/ParticleBackground';
 import { PeriodicNav } from './components/PeriodicNav';
+import { SayMyName } from './components/SayMyName';
 import { LabIntro } from './components/LabIntro';
 import { HeroElement } from './components/HeroElement';
 import { SubjectFile } from './components/SubjectFile';
@@ -22,15 +23,18 @@ import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
 export default function App() {
-  const [showIntro, setShowIntro] = useState<boolean>(() => {
-    // Check if user has already visited in this session/browser
+  const hasVisited = (() => {
     try {
-      const visited = localStorage.getItem('vp_lab_visited');
-      return visited !== 'true';
+      return localStorage.getItem('vp_lab_visited') === 'true';
     } catch {
-      return true;
+      return false;
     }
-  });
+  })();
+
+  // "SAY MY NAME" splash — only on first visit
+  const [showSayMyName, setShowSayMyName] = useState<boolean>(!hasVisited);
+
+  const [showIntro, setShowIntro] = useState<boolean>(!hasVisited);
 
   const [activeSection, setActiveSection] = useState<string>('hero');
 
@@ -81,6 +85,7 @@ export default function App() {
   };
 
   const handleReplayIntro = () => {
+    setShowSayMyName(true);
     setShowIntro(true);
     window.scrollTo({ top: 0 });
   };
@@ -91,15 +96,22 @@ export default function App() {
       <FilmGrain />
       <ParticleBackground />
 
+      {/* "SAY MY NAME" — cinematic splash before intro sequence */}
+      <AnimatePresence>
+        {showSayMyName && (
+          <SayMyName onComplete={() => setShowSayMyName(false)} />
+        )}
+      </AnimatePresence>
+
       {/* Cinematic Opening Sequence */}
       <AnimatePresence>
-        {showIntro && (
+        {!showSayMyName && showIntro && (
           <LabIntro onComplete={() => setShowIntro(false)} />
         )}
       </AnimatePresence>
 
       {/* Main Portfolio Application */}
-      <div className={`transition-opacity duration-700 ${showIntro ? 'opacity-0 h-screen overflow-hidden' : 'opacity-100'}`}>
+      <div className={`transition-opacity duration-700 ${(showSayMyName || showIntro) ? 'opacity-0 h-screen overflow-hidden' : 'opacity-100'}`}>
         {/* Periodic Navigation Bar */}
         <PeriodicNav
           activeSection={activeSection}

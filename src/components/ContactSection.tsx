@@ -86,7 +86,7 @@ export const ContactSection: React.FC = () => {
             {/* GitHub Profile Node */}
             <a
               id="github-profile-link"
-              href="https://github.com"
+              href="https://github.com/varunraj-2005"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#11120F] border border-white/10 p-4 flex flex-col justify-between gap-3 hover:border-[#65C7E8]/50 hover:bg-[#151713] transition-all group"
@@ -106,7 +106,7 @@ export const ContactSection: React.FC = () => {
             {/* LinkedIn Profile Node */}
             <a
               id="linkedin-profile-link"
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/varunraj-p-5b8813313"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#11120F] border border-white/10 p-4 flex flex-col justify-between gap-3 hover:border-[#68742C]/80 hover:bg-[#151713] transition-all group"
@@ -126,7 +126,7 @@ export const ContactSection: React.FC = () => {
             {/* LeetCode Node */}
             <a
               id="leetcode-profile-link"
-              href="https://leetcode.com"
+              href="https://leetcode.com/u/varunraj5173/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#11120F] border border-white/10 p-4 flex flex-col justify-between gap-3 hover:border-[#D6B94C]/50 hover:bg-[#151713] transition-all group"

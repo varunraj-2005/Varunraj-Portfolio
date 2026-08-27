@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 110" width="100%">
+  <defs>
+    <style>
+      .tile-name { font-family: 'Courier New', monospace; font-size: 9px; fill: #7fe8ff; }
+      .tile-num { font-family: 'Courier New', monospace; font-size: 11px; fill: #4fd1e8; }
+      .tile-sym { font-family: 'Courier New', monospace; font-weight: bold; font-size: 30px; fill: #eafcff; }
+    </style>
+  </defs>
+
+  <!-- Element tile template repeated with offsets -->
+  <!-- 1: Java -->
+  <g transform="translate(10,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="0.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="0.0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">01</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">Jv</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">JAVA</text>
+  </g>
+
+  <!-- 2: Python -->
+  <g transform="translate(118,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">02</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">Py</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">PYTHON</text>
+  </g>
+
+  <!-- 3: C# -->
+  <g transform="translate(226,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">03</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">C#</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">C SHARP</text>
+  </g>
+
+  <!-- 4: MERN -->
+  <g transform="translate(334,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">04</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">Mn</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">MERN</text>
+  </g>
+
+  <!-- 5: MEAN -->
+  <g transform="translate(442,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">05</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">Me</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">MEAN</text>
+  </g>
+
+  <!-- 6: MySQL -->
+  <g transform="translate(550,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="2.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="2.0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">06</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">Sq</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">MYSQL</text>
+  </g>
+
+  <!-- 7: MongoDB -->
+  <g transform="translate(658,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">07</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">Mg</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">MONGODB</text>
+  </g>
+
+  <!-- 8: AI / NLP -->
+  <g transform="translate(766,5)">
+    <rect x="0" y="0" width="98" height="100" rx="8" fill="#0a0e14" stroke="#00f5ff" stroke-width="1.6">
+      <animate attributeName="stroke" values="#00f5ff;#b026ff;#00f5ff" dur="6s" begin="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="6s" begin="2.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="8" y="18" class="tile-num">08</text>
+    <text x="49" y="62" class="tile-sym" text-anchor="middle">Ai</text>
+    <text x="49" y="88" class="tile-name" text-anchor="middle">AI / NLP</text>
+  </g>
+</svg>

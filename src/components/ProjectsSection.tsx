@@ -3,6 +3,8 @@ import { SectionLabel } from './SectionLabel';
 import { SentimentExperiment } from './SentimentExperiment';
 import { CrystalTransition } from './CrystalTransition';
 import { EventExperiment } from './EventExperiment';
+import { SecretScannerExperiment } from './SecretScannerExperiment';
+import { AIStoryExperiment } from './AIStoryExperiment';
 
 export const ProjectsSection: React.FC = () => {
   return (
@@ -18,14 +20,23 @@ export const ProjectsSection: React.FC = () => {
       />
 
       <div className="flex flex-col gap-8">
-        {/* Experiment 01 */}
+        {/* Experiment 01: Sentiment ABSA */}
         <SentimentExperiment />
 
-        {/* Transition: Blue Chemical Crystal Synthesis */}
         <CrystalTransition />
 
-        {/* Experiment 02 */}
+        {/* Experiment 02: Campus Event Geotag */}
         <EventExperiment />
+
+        <CrystalTransition />
+
+        {/* Experiment 03: SecretScanner */}
+        <SecretScannerExperiment />
+
+        <CrystalTransition />
+
+        {/* Experiment 04: AI Story Writing */}
+        <AIStoryExperiment />
       </div>
     </section>
   );
